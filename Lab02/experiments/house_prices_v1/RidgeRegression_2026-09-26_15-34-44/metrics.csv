@@ -1,0 +1,2 @@
+Model,RMSE,MAE,R² Score,RMSLE
+RidgeRegression,28885.82,19127.03,0.8698,0.15227
