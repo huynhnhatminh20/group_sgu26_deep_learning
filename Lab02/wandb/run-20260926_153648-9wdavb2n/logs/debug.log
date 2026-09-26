@@ -1,0 +1,19 @@
+2026-09-26 15:36:48,378 INFO    MainThread:14744 [wandb_init.py:init():783] calling init triggers
+2026-09-26 15:36:48,378 INFO    MainThread:14744 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'name': 'slow-400', 'n_estimators': 400, 'max_depth': 4, 'learning_rate': 0.05, '_wandb': {}}
+2026-09-26 15:36:48,378 INFO    MainThread:14744 [wandb_init.py:init():831] starting backend
+2026-09-26 15:36:48,378 INFO    MainThread:14744 [wandb_init.py:init():846] sending inform_init request
+2026-09-26 15:36:48,404 INFO    MainThread:14744 [wandb_init.py:init():851] backend started and connected
+2026-09-26 15:36:48,406 INFO    MainThread:14744 [wandb_init.py:init():921] updated telemetry
+2026-09-26 15:36:48,549 INFO    MainThread:14744 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-09-26 15:36:49,391 INFO    MainThread:14744 [wandb_init.py:init():981] starting run threads in backend
+2026-09-26 15:36:50,155 INFO    MainThread:14744 [wandb_run.py:_console_start():2531] atexit reg
+2026-09-26 15:36:50,156 INFO    MainThread:14744 [wandb_run.py:_redirect():2381] redirect: wrap_raw
+2026-09-26 15:36:50,156 INFO    MainThread:14744 [wandb_run.py:_redirect():2450] Wrapping output streams.
+2026-09-26 15:36:50,157 INFO    MainThread:14744 [wandb_run.py:_redirect():2473] Redirects installed.
+2026-09-26 15:36:50,158 INFO    MainThread:14744 [wandb_init.py:init():1019] run started, returning control to user process
+2026-09-26 15:36:57,666 INFO    MainThread:14744 [wandb_run.py:_finish():2303] finishing run huynhnhatminh20102005-sai-gon-university-/house-prices-regression/9wdavb2n
+2026-09-26 15:36:57,667 INFO    MainThread:14744 [wandb_run.py:_atexit_cleanup():2498] got exitcode: 0
+2026-09-26 15:36:57,669 INFO    MainThread:14744 [wandb_run.py:_restore():2480] restore
+2026-09-26 15:36:57,669 INFO    MainThread:14744 [wandb_run.py:_restore():2486] restore done
+2026-09-26 15:37:00,382 INFO    MainThread:14744 [wandb_run.py:_footer_sync_info():3901] logging synced files

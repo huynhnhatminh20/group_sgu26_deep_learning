@@ -1,0 +1,19 @@
+2026-09-26 15:35:17,750 INFO    MainThread:14744 [wandb_init.py:init():783] calling init triggers
+2026-09-26 15:35:17,750 INFO    MainThread:14744 [wandb_init.py:init():788] wandb.init called with sweep_config: {}
+config: {'name': 'baseline', 'hidden1': 50, 'hidden2': 25, 'learning_rate': 0.01, 'batch_size': 10, 'epochs': 20, '_wandb': {}}
+2026-09-26 15:35:17,750 INFO    MainThread:14744 [wandb_init.py:init():831] starting backend
+2026-09-26 15:35:17,750 INFO    MainThread:14744 [wandb_init.py:init():846] sending inform_init request
+2026-09-26 15:35:17,761 INFO    MainThread:14744 [wandb_init.py:init():851] backend started and connected
+2026-09-26 15:35:17,762 INFO    MainThread:14744 [wandb_init.py:init():921] updated telemetry
+2026-09-26 15:35:17,885 INFO    MainThread:14744 [wandb_init.py:init():944] communicating run to backend with 90.0 second timeout
+2026-09-26 15:35:18,783 INFO    MainThread:14744 [wandb_init.py:init():981] starting run threads in backend
+2026-09-26 15:35:19,065 INFO    MainThread:14744 [wandb_run.py:_console_start():2531] atexit reg
+2026-09-26 15:35:19,065 INFO    MainThread:14744 [wandb_run.py:_redirect():2381] redirect: wrap_raw
+2026-09-26 15:35:19,065 INFO    MainThread:14744 [wandb_run.py:_redirect():2450] Wrapping output streams.
+2026-09-26 15:35:19,065 INFO    MainThread:14744 [wandb_run.py:_redirect():2473] Redirects installed.
+2026-09-26 15:35:19,067 INFO    MainThread:14744 [wandb_init.py:init():1019] run started, returning control to user process
+2026-09-26 15:35:21,742 INFO    MainThread:14744 [wandb_run.py:_finish():2303] finishing run huynhnhatminh20102005-sai-gon-university-/house-prices-regression/loph2p1m
+2026-09-26 15:35:21,743 INFO    MainThread:14744 [wandb_run.py:_atexit_cleanup():2498] got exitcode: 0
+2026-09-26 15:35:21,744 INFO    MainThread:14744 [wandb_run.py:_restore():2480] restore
+2026-09-26 15:35:21,744 INFO    MainThread:14744 [wandb_run.py:_restore():2486] restore done
+2026-09-26 15:35:24,293 INFO    MainThread:14744 [wandb_run.py:_footer_sync_info():3901] logging synced files

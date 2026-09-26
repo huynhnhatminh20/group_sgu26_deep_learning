@@ -1,0 +1,128 @@
+_wandb:
+    value:
+        cli_version: 0.30.0
+        e:
+            v3wjxds2fdt84xfnykdzyqnggkesho3k:
+                args:
+                    - -f
+                    - C:\Users\ASUS\AppData\Local\Temp\tmp11nd6hge.json
+                    - '--HistoryManager.hist_file=:memory:'
+                cpu_count: 12
+                cpu_count_logical: 16
+                cudaVersion: "13.1"
+                disk:
+                    /:
+                        total: "992251023360"
+                        used: "547998023680"
+                email: huynhnhatminh20102005@gmail.com
+                executable: C:\Users\ASUS\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: b21621f40080956eb99e296531aa3d493910e5f0
+                    remote: https://github.com/huynhnhatminh20/sgu26_deep_learning
+                gpu: NVIDIA GeForce RTX 3050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2048
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 3050 Laptop GPU
+                      uuid: GPU-d12a90f2-c716-89d3-ac3b-c9824628714a
+                host: LAPTOP-EKSN6V0S
+                memory:
+                    total: "16783417344"
+                os: Windows-10-10.0.26200-SP0
+                program: <python with no main file>
+                python: CPython 3.11.0
+                root: C:\Users\ASUS\sgu26_deep_learning\Tuần 02
+                startedAt: "2026-09-26T08:37:25.586205Z"
+                writerId: v3wjxds2fdt84xfnykdzyqnggkesho3k
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 1
+                - 5
+                - 6
+                - 53
+                - 105
+            "2":
+                - 1
+                - 5
+                - 6
+                - 53
+                - 105
+            "3":
+                - 2
+                - 13
+                - 16
+                - 78
+            "4": 3.11.0
+            "5": 0.30.0
+            "8":
+                - 2
+                - 3
+                - 13
+            "12": 0.30.0
+            "13": windows-amd64
+GradientBoosting:
+    value:
+        - learning_rate: 0.1
+          max_depth: 5
+          n_estimators: 200
+          name: baseline
+        - learning_rate: 0.05
+          max_depth: 4
+          n_estimators: 400
+          name: slow-400
+        - learning_rate: 0.1
+          max_depth: 7
+          n_estimators: 150
+          name: deep-150
+        - learning_rate: 0.05
+          max_depth: 3
+          n_estimators: 600
+          name: flat-600
+MLP:
+    value:
+        - batch_size: 10
+          epochs: 20
+          hidden1: 50
+          hidden2: 25
+          learning_rate: 0.01
+          name: baseline
+        - batch_size: 10
+          epochs: 20
+          hidden1: 32
+          hidden2: 16
+          learning_rate: 0.01
+          name: compact
+        - batch_size: 10
+          epochs: 20
+          hidden1: 64
+          hidden2: 32
+          learning_rate: 0.01
+          name: wide
+        - batch_size: 10
+          epochs: 40
+          hidden1: 50
+          hidden2: 25
+          learning_rate: 0.005
+          name: slow-long
+XGBoost:
+    value:
+        - learning_rate: 0.1
+          max_depth: 5
+          n_estimators: 200
+          name: baseline
+        - learning_rate: 0.05
+          max_depth: 7
+          n_estimators: 300
+          name: deep-300
+        - learning_rate: 0.05
+          max_depth: 3
+          n_estimators: 500
+          name: flat-500
+        - learning_rate: 0.05
+          max_depth: 4
+          n_estimators: 400
+          name: mid-400
