@@ -1,1 +1,1 @@
-# Group SGU26 - deep learning repo cho bài t?p nhóm và d? án nhóm 
+# Group SGU26 - deep learning repo cho bai tap nhom va du an nhom
