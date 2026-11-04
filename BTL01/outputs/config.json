@@ -1,0 +1,19 @@
+{
+  "data_seed": 2026,
+  "model_seeds": [
+    11,
+    22,
+    33
+  ],
+  "batch_size": 128,
+  "epochs": 100,
+  "learning_rate": 0.003,
+  "optimizer": "Adam",
+  "activation": "Tanh",
+  "output_activation": "Sigmoid",
+  "train_size": 2000,
+  "validation_size": 256,
+  "test_size": 100,
+  "device": "cpu",
+  "stopping": "Chạy đủ 100 epoch"
+}

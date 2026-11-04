@@ -1,0 +1,20 @@
+{
+  "run_id": "C_n2000_w10_d4_seed22",
+  "n_train": 2000,
+  "width": 10,
+  "depth": 4,
+  "seed": 22,
+  "epochs": 100,
+  "best_epoch": 100,
+  "train_mse": 4.427738531376235e-05,
+  "validation_mse": 3.247369294508913e-05,
+  "train_seconds": 7.368968099995982,
+  "group": "C",
+  "test_mse": 3.26943481923081e-05,
+  "test_mae": 0.004428439773619175,
+  "test_rmse": 0.005717897182733186,
+  "selected_by": "Validation MSE trung bình thấp nhất qua ba seed; checkpoint có validation MSE thấp nhất trong cấu hình",
+  "config_validation_mse_mean": 0.0009394040140206867,
+  "config_validation_mse_std": 0.0015639830914516385,
+  "checkpoint": "models/C_n2000_w10_d4_seed22.pt"
+}
