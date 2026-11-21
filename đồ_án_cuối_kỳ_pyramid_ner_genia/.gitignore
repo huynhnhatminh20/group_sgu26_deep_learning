@@ -1,0 +1,8 @@
+.ipynb_checkpoints/
+.sync/
+wandb_api.md
+.env
+.env.*
+wandb/
+*.pt
+__pycache__/
