@@ -5,14 +5,44 @@ Sinh viên: Huỳnh Nhật Minh — 3123580025
 
 ## Thành phần bài nộp
 
-| Tệp | Nội dung |
+| Tệp / Thư mục | Nội dung |
 |---|---|
+| `BTL02-Huỳnh_Nhật_Minh_3123580025.docx` | Báo cáo chi tiết bài tập lớn dạng Word |
+| `BTL02-Huỳnh_Nhật_Minh_3123580025.pdf` | Báo cáo chi tiết bài tập lớn dạng PDF |
+| `slide.pptx` | Slide thuyết trình bài tập lớn dạng PowerPoint |
+| `slide.pdf` | Slide thuyết trình bài tập lớn dạng PDF |
 | `btl02_fer2013.ipynb` | Toàn bộ mã nguồn PyTorch: nạp dữ liệu, EDA, augmentation, định nghĩa mô hình, 27 lượt thực nghiệm nhóm A/B/C, mô hình cuối, đánh giá và trực quan bộ lọc |
-| `report.tex` | Báo cáo LaTeX (XeLaTeX), không kèm PDF |
-| `slides.tex` | Slide Beamer LaTeX (XeLaTeX) |
-| `outputs/experiment_log.xlsx` | Nhật ký thực nghiệm 7 sheet: tổng quan, chi tiết 28 lượt, tổng hợp A-B-C, cấu hình, lịch sử chạy (kể cả FAILED/DEBUG), lịch sử phát triển, log từng epoch |
-| `outputs/` | Log từng epoch, `attempts_log.csv`, hình, bảng tổng hợp, checkpoint mô hình cuối |
-| `requirements.txt` | Thư viện Python cần cài |
+| `outputs/experiment_log.xlsx` | Nhật ký thực nghiệm 7 sheet: tổng quan, chi tiết 28 lượt, tổng hợp A-B-C, cấu hình, lịch sử chạy, log từng epoch |
+| `outputs/` | Chứa biểu đồ `figures/`, log từng epoch `logs/`, các bảng tổng hợp `.csv` và kết quả đánh giá |
+| `đề BTL02/` | Đề bài yêu cầu (`Emotion_Recognition.pdf`), báo cáo mẫu và mã nguồn demo |
+| `requirements.txt` | Danh sách thư viện Python cần cài đặt |
+
+## Cấu trúc thư mục
+
+```text
+BTL02/
+├── BTL02-Huỳnh_Nhật_Minh_3123580025.docx   Báo cáo Word
+├── BTL02-Huỳnh_Nhật_Minh_3123580025.pdf    Báo cáo PDF
+├── slide.pptx                             Slide thuyết trình PowerPoint
+├── slide.pdf                              Slide thuyết trình PDF
+├── btl02_fer2013.ipynb                    Notebook chính huấn luyện và đánh giá
+├── requirements.txt                       Thư viện cần cài
+├── README.md                              Tài liệu hướng dẫn và mô tả
+├── đề BTL02/                              Đề bài và tài liệu tham khảo demo
+├── data/                                  Thư mục dữ liệu chứa fer2013.csv (git ignored)
+└── outputs/
+    ├── figures/                           Biểu đồ trực quan hóa (EDA, hội tụ, confusion matrix, bộ lọc...)
+    ├── logs/                              28 file log chi tiết các epoch
+    ├── architecture_table.csv
+    ├── attempts_log.csv
+    ├── classification_report.csv
+    ├── class_distribution.csv
+    ├── config.json
+    ├── experiment_log.xlsx
+    ├── summary_groups.csv
+    ├── summary_runs.csv
+    └── test_predictions.csv
+```
 
 ## Chạy notebook
 
@@ -41,11 +71,3 @@ Notebook tự cache dữ liệu vào `outputs/data/fer2013.npz`. Trên GPU 4 GB,
 
 Xem `outputs/summary_groups.csv`, `outputs/summary_runs.csv`, `outputs/experiment_log.xlsx`, `outputs/attempts_log.csv` và các hình trong `outputs/figures/`. Báo cáo và slide lấy trực tiếp số liệu từ các tệp này.
 
-## Biên dịch LaTeX
-
-Cả hai tệp dùng XeLaTeX (do có tiếng Việt và font hệ thống):
-
-```bash
-xelatex report.tex
-xelatex slides.tex
-```
