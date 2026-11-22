@@ -1,0 +1,83 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch": "2.11.0+cu128",
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "base_cfg": {
+    "batch_size": 256,
+    "epochs": 20,
+    "patience": 6,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "momentum": 0.9,
+    "dropout": 0.2,
+    "activation": "relu",
+    "batchnorm": false,
+    "augment": false,
+    "label_smoothing": 0.0,
+    "class_weight": false,
+    "cosine": false
+  },
+  "archs": {
+    "small": {
+      "widths": [
+        32,
+        64,
+        128
+      ],
+      "convs": [
+        2,
+        2,
+        2
+      ],
+      "fc": 512
+    },
+    "medium": {
+      "widths": [
+        64,
+        128,
+        256
+      ],
+      "convs": [
+        3,
+        3,
+        3
+      ],
+      "fc": 512
+    },
+    "large": {
+      "widths": [
+        64,
+        128,
+        256,
+        512
+      ],
+      "convs": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "fc": 512
+    }
+  },
+  "runs": [
+    "A1",
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "start_time": "2026-11-14 15:07:49.642409",
+  "end_time": "2026-11-14 17:40:09.752293",
+  "final_run": "B1"
+}
