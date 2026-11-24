@@ -1,0 +1,60 @@
+Notebook: 5. Others/2_obj_detection_pytorch.ipynb
+Started: 2026-11-22T20:51:27
+Status: OK | Wall time: 43.8s
+================================================================================
+
+[harness] figures -> C:\Users\ASUS\group_sgu26_deep_learning\BTL03\output\5. Others\2_obj_detection_pytorch
+Using device: cuda
+Loaded X: (13745, 3, 64, 64) | Y: (13745,)
+X_train shape: (9621, 3, 64, 64)
+9621 train samples
+4124 test samples
+CarDetectorFCN(
+  (conv1): Conv2d(3, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(10, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=8, stride=8, padding=0, dilation=1, ceil_mode=False)
+  (dropout1): Dropout(p=0.25, inplace=False)
+  (dense1): Conv2d(10, 128, kernel_size=(8, 8), stride=(1, 1))
+  (dropout2): Dropout(p=0.5, inplace=False)
+  (dense2): Conv2d(128, 1, kernel_size=(1, 1), stride=(1, 1))
+)
+Total params: 83,367
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+CarDetectorFCN                           [1, 1]                    --
+├─Conv2d: 1-1                            [1, 10, 64, 64]           280
+├─Conv2d: 1-2                            [1, 10, 64, 64]           910
+├─MaxPool2d: 1-3                         [1, 10, 8, 8]             --
+├─Dropout: 1-4                           [1, 10, 8, 8]             --
+├─Conv2d: 1-5                            [1, 128, 1, 1]            82,048
+├─Dropout: 1-6                           [1, 128, 1, 1]            --
+├─Conv2d: 1-7                            [1, 1, 1, 1]              129
+==========================================================================================
+Total params: 83,367
+Trainable params: 83,367
+Non-trainable params: 0
+Total mult-adds (Units.MEGABYTES): 4.96
+==========================================================================================
+Input size (MB): 0.05
+Forward/backward pass size (MB): 0.66
+Params size (MB): 0.33
+Estimated Total Size (MB): 1.04
+==========================================================================================
+Epoch 1/5 - loss: 0.5079 - acc: 0.8279 - val_loss: 0.2505 - val_acc: 0.9302
+Epoch 2/5 - loss: 0.2392 - acc: 0.9279 - val_loss: 0.2198 - val_acc: 0.9287
+Epoch 3/5 - loss: 0.1885 - acc: 0.9395 - val_loss: 0.1496 - val_acc: 0.9520
+Epoch 4/5 - loss: 0.1524 - acc: 0.9537 - val_loss: 0.1154 - val_acc: 0.9641
+Epoch 5/5 - loss: 0.1270 - acc: 0.9614 - val_loss: 0.0988 - val_acc: 0.9692
+Test score (MSE): 0.09881522436377843
+Test accuracy: 0.9692046556741029
+Saved weights to localize.pt
+CarDetectorFCN(
+  (conv1): Conv2d(3, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(10, 10, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=8, stride=8, padding=0, dilation=1, ceil_mode=False)
+  (dropout1): Dropout(p=0.25, inplace=False)
+  (dense1): Conv2d(10, 128, kernel_size=(8, 8), stride=(1, 1))
+  (dropout2): Dropout(p=0.5, inplace=False)
+  (dense2): Conv2d(128, 1, kernel_size=(1, 1), stride=(1, 1))
+)
