@@ -1,0 +1,16 @@
+Notebook: 0. Getting Started/getting_started_pytorch.ipynb
+Started: 2026-11-22T20:48:52
+Status: OK | Wall time: 23.8s
+================================================================================
+
+[harness] figures -> C:\Users\ASUS\group_sgu26_deep_learning\BTL03\output\0. Getting Started\getting_started_pytorch
+PyTorch version: 2.11.0+cu128
+CUDA available: True
+CUDA version (PyTorch build): 12.8
+Selected device: cuda
+Number of GPUs detected: 1
+  GPU 0: NVIDIA GeForce RTX 3050 Laptop GPU | VRAM: 4.00 GB | Compute Capability: 8.6
+Tensor device: cuda:0
+tensor([[ 0.5809, -1.8936,  0.0346],
+        [-1.8936,  7.1950,  0.1661],
+        [ 0.0346,  0.1661,  0.5709]], device='cuda:0')
